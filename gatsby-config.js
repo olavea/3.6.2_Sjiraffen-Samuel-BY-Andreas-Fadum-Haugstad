@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Geff the Giraffe`,
-    author: `Andreas fadum Haugstad`,
+    title: `Sjiraffen Samuel`,
+    author: `Andreas Fadum Haugstad`,
     description: `A children's book with adventurous animals. In Norwegian written language.`,
     developer: `Ola Vea`,
     siteUrl: `https://olavea.carrd.co/`,
