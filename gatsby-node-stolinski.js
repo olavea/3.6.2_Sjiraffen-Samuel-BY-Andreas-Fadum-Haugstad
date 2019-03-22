@@ -21,7 +21,7 @@
 //         results.data.allMarkdownRemark.edges.forEach(({node}) => {
 //             createPage({
 //                 path: node.fronmatter.slug,
-//                 component: path.resolve(`./src/templates/postLayout.js`);
+//                 component: path.resolve(`./src/templates/blog-post.js`);
 //                 context: {
 //                     slug: node.fronmatter.slug,
 //                 }

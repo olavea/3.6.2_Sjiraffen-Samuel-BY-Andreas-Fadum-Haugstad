@@ -1,42 +1,40 @@
 import React from "react";
 
-class AddKidsToyAnimalForm extends React.Component {
-  nameRef = React.createRef();
+class AddLilliansColoring extends React.Component {
   imageRef = React.createRef();
+  nameRef = React.createRef();
+
   createToy = event => {
     event.preventDefault();
 
     const toyAnimal = {
-      name: this.nameRef.current.value,
       image: this.imageRef.current.value
     };
-    this.props.addToyAnimal(toyAnimal);
+    this.props.addColoringPages(toyAnimal);
     //refresh the form
     event.currentTarget.reset();
   };
   render() {
     return (
-      <form className="toyAnimal-edit" onSubmit={this.createToy}>
+      <form className="coloring-edit" onSubmit={this.createToy}>
         <input
           name="name"
           ref={this.nameRef}
           type="text"
-          placeholder="Name of Your Kids Fav Toy Animal"
+          placeholder="name of Your Kid"
         />
         <input
           name="image"
           ref={this.imageRef}
           type="text"
-          placeholder="Photo of Your Kids fav toy animal"
+          placeholder="Email a Photo of Your Kids Coloring Page"
         />
-        <button type="submit">
-          + Add Your Kids Fav Toy Animal Name and Photo
-        </button>
+        <button type="submit">+ Add Your Kids Coloring Page</button>
       </form>
     );
   }
 }
-export default AddKidsToyAnimalForm;
+export default AddLilliansColoring;
 
 // nameRef = React.createRef();
 // imageRef = React.createRef();

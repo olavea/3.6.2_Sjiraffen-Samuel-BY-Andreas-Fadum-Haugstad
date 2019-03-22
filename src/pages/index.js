@@ -1,11 +1,12 @@
 import React from "react";
-import AddKidsToyAnimalForm from "../components/AddKidsToyAnimalForm";
+//import AddKidsToyAnimalForm from "../components/AddKidsToyAnimalForm";
 
 import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import Image from "../components/image";
 import SEO from "../components/seo";
 import { rhythm } from "../utils/typography";
+import buttonOnward from "../templates/Bee_hummingbird_no.png";
 
 class BlogIndex extends React.Component {
   state = {
@@ -30,6 +31,15 @@ class BlogIndex extends React.Component {
       <>
         <Layout location={this.props.location} title={siteTitle}>
           <div>
+            <div
+              style={{
+                maxWidth: `1224px`,
+                padding: `0px`,
+                marginBottom: `0.33rem`
+              }}
+            >
+              <Image />
+            </div>
             <ul
               style={{
                 display: `flex`,
@@ -43,23 +53,17 @@ class BlogIndex extends React.Component {
               <li>
                 {
                   <Link to="/1/1/" rel="next">
-                    1 →
+                    <img
+                      style={{
+                        width: "333px"
+                      }}
+                      src={buttonOnward}
+                      alt="button Onward!"
+                    />
                   </Link>
                 }
               </li>
             </ul>
-
-            <div
-              style={{
-                maxWidth: `900px`,
-                padding: `0px`,
-                marginBottom: `0.33rem`
-              }}
-            >
-              <Image />
-            </div>
-
-            <AddKidsToyAnimalForm addToyAnimal={this.addToyAnimal} />
 
             <SEO
               title="All posts"
