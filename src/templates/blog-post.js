@@ -75,7 +75,7 @@ class BlogPostTemplate extends React.Component {
                 <Link to={next.fields.slug} rel="next">
                   <img
                     style={{
-                      width: "333px"
+                      width: "133px"
                     }}
                     src={buttonOnward}
                     alt="button Onward!"
